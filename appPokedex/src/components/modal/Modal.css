@@ -1,0 +1,148 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.modalBackground {
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    backdrop-filter: blur(4px);
+    box-shadow: 0, 20px, 20px, rgba(0, 0, 0, 0.2);
+    justify-content: center;
+    align-items: center;
+}
+
+.modalBackground .modalContainer {
+    width: 400px;
+    height: 500px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.btnShowModal {
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #111;
+    cursor: pointer;
+    display: flex;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    height: 35px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 100%;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-top: 15px;
+}
+
+.btnShowModal:after {
+    background-color: #111;
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 32px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -1px;
+    transform: translate(8px, 8px);
+    transition: transform .2s ease-out;
+    z-index: -1;
+}
+
+.btnShowModal:hover:after {
+    transform: translate(0, 0);
+}
+
+.btnShowModal:active {
+    background-color: #fff;
+    outline: 0;
+}
+
+.btnShowModal:hover {
+    outline: 0;
+}
+
+@media (min-width: 768px) {
+    .button-56 {
+        padding: 0 40px;
+    }
+}
+
+.modalBackground .modalContainer .body .title {
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+}
+
+.modalBackground .modalContainer .body .spritePkm img {
+    width: 200px;
+    padding-left: 25%;
+}
+
+.modalBackground .modalContainer .body .pkmTypes {
+    display: block;
+    /* justify-content: space-between; */
+    margin-top: 25px;
+}
+
+.modalBackground .modalContainer .body .pkmTypes p{
+    /* display: inline-block; */
+    padding-left: 155px;
+}
+
+.modalBackground .modalContainer .body .pkmTypes span{
+    display: inline-block;
+    padding-left: 3px;
+}
+
+.modalBackground .modalContainer .body .pkmTypes span:first-child{
+    padding-left: 130px;
+}
+
+.modalBackground .modalContainer .closeBtn button {
+    display: flex;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding-left: 370px;
+}
+
+/* .modalBackground .modalContainer .closeBtn button{
+    display: flex;
+    justify-content: flex-end;
+} */
+
+.body span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modalBackground .modalContainer .body {
+    display: flex;
+    flex-direction: column;
+    flex: 50%;
+    font-size: 1.3rem;
+    text-align: left;
+    padding-left: 20px;
+}
