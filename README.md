@@ -2,6 +2,6 @@
  
   * Projeto: (Projeto da faculdade)Pokedex com busca e listagem de pokemons 1ºGen, usando PokeAPI.
   
-  * Linguagem: TypeScript
+  * Linguagem: React/TypeScript
   
 ✔️ 
